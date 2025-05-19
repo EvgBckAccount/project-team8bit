@@ -16,7 +16,7 @@
       rel="stylesheet">
 
     <script type="module" crossorigin src="/project-team8bit/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team8bit/assets/index-BYgL2LgO.css">
+    <link rel="stylesheet" crossorigin href="/project-team8bit/assets/index-B4VZq_c_.css">
   </head>
   <body>
     <header class="header">
@@ -27,7 +27,7 @@
     <!-- Десктопна навігація -->
     <nav class="nav-desktop">
       <ul class="nav-list">
-        <li><a href="#yoga-classes" class="active">Yoga Classes</a></li>
+        <li><a href="#classes" class="active">Yoga Classes</a></li>
         <li><a href="#team">Team</a></li>
         <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -79,7 +79,7 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      <div class="hero-section section">
+      <div class="hero-section section" id="classes">
   <div class="hero-image">
     <picture>
       <source
@@ -112,15 +112,15 @@
           growth.
         </p>
         <div class="buttons">
-          <a href="#Pricing" class="btn btn-primary">Join Now</a>
-          <a href="#Gallery" class="btn btn-secondary">Learn More</a>
+          <a href="#pricing" class="btn btn-primary">Join Now</a>
+          <a href="#gallery" class="btn btn-secondary">Learn More</a>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-      <section class="yogaclass">
+      <section id="classes" class="yogaclass">
   <div class="conteiner yogaclass-header">
     <div class="yogaclass-header-title">
       <p class="yoga-subtitle">Explore</p>
@@ -562,7 +562,7 @@
           Community support group
         </li>
       </ul>
-      <button class="pricing-btn-primary" data-modal="one-session">Join</button>
+      <button class="pricing-btn-primary" data-modal="modal1">Join</button>
     </div>
 
     <!-- Card 2 -->
@@ -591,7 +591,7 @@
           Priority customer support
         </li>
       </ul>
-      <button class="pricing-btn-primary" data-modal="8-sessions">Join</button>
+      <button class="pricing-btn-primary" data-modal="modal2">Join</button>
     </div>
 
     <!-- Card 3 (special layout) -->
@@ -639,7 +639,7 @@
       </ul>
 
       <!-- Default button for mobile and desktop -->
-      <button class="pricing-btn-primary btn-default" data-modal="12-sessions">Join</button>
+      <button class="pricing-btn-primary btn-default" data-modal="modal3">Join</button>
     </div>
 
   </div>
@@ -647,7 +647,7 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer id="footer-contacts" class="page-footer">
     <!-- White container in footer -->
     <div class="container footer-container">
         <!-- Left container with form email -->
@@ -679,7 +679,7 @@
                 <h3 class="footer-nav-links">Quick Links</h3>
                 <ul class="footer-links">
                     <li class="links-text links-text-left">
-                        <a class="footer-nav" href="#yoga_classes">Yoga Classes</a>
+                        <a class="footer-nav" href="#classes">Yoga Classes</a>
                     </li>
                     <li class="links-text links-text-left">
                         <a class="footer-nav" href="#team">Team</a>
@@ -701,7 +701,7 @@
                         <a href="https://www.facebook.com/goITclub/" class="social-link" target="_blank"
                             rel="noopener noreferrer" aria-label="Facebook">
                             <svg class="social-icon" width="21" height="21">
-                                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-facebook"></use>
+                                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-facebook"></use>
                             </svg>
                             <span class="social-text">Facebook</span>
                         </a>
@@ -710,7 +710,7 @@
                         <a href="https://www.instagram.com/goit.ua/" class="social-link" target="_blank"
                             rel="noopener noreferrer" aria-label="Instagram">
                             <svg class="social-icon" width="21" height="21">
-                                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-instagram"></use>
+                                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-instagram"></use>
                             </svg>
                             <span class="social-text">Instagram</span>
                         </a>
@@ -719,7 +719,7 @@
                         <a href="https://www.linkedin.com/school/goit-start-your-career-in-it/" class="social-link"
                             target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                             <svg class="social-icon" width="21" height="21">
-                                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-linkedin"></use>
+                                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-linkedin"></use>
                             </svg>
                             <span class="social-text">LinkedIn</span>
                         </a>
@@ -728,7 +728,7 @@
                         <a href="https://www.youtube.com/@GoIT" class="social-link" target="_blank"
                             rel="noopener noreferrer" aria-label="YouTube">
                             <svg class="social-icon" width="21" height="21">
-                                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-youtube"></use>
+                                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-youtube"></use>
                             </svg>
                             <span class="social-text">YouTube</span>
                         </a>
@@ -743,11 +743,11 @@
     </div>
 </footer>
     <!-- modal 10  is-open-->
-<div class="backdrop is-open">
+<div class="backdrop" id="modal1">
     <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
             <svg class="icons-close" width="32" height="32">
-                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-crossbar"></use>
+                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-crossbar"></use>
             </svg>
         </button>
 
@@ -782,11 +782,11 @@
 </div>
 
 <!-- modal 65  is-open-->
-<div class="backdrop">
+<div class="backdrop" id="modal2">
     <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
             <svg class="icons-close" width="32" height="32">
-                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-crossbar"></use>
+                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-crossbar"></use>
             </svg>
         </button>
 
@@ -821,11 +821,11 @@
 </div>
 
 <!-- modal 80  is-open-->
-<div class="backdrop">
+<div class="backdrop" id="modal3">
     <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
             <svg class="icons-close" width="32" height="32">
-                <use href="/project-team8bit/assets/icons-Cc0iYjds.svg#icon-crossbar"></use>
+                <use href="/project-team8bit/assets/icons-BcerlxMB.svg#icon-crossbar"></use>
             </svg>
         </button>
 
