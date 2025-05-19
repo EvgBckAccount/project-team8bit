@@ -16,10 +16,66 @@
       rel="stylesheet">
 
     <script type="module" crossorigin src="/project-team8bit/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team8bit/assets/index-DblpUyHh.css">
+    <link rel="stylesheet" crossorigin href="/project-team8bit/assets/index-BYgL2LgO.css">
   </head>
   <body>
+    <header class="header">
+  <div class="header-container">
+    <!-- Бургер для мобільного -->
+    <button class="menu-toggle" id="open-menu">&#9776;</button>
+
+    <!-- Десктопна навігація -->
+    <nav class="nav-desktop">
+      <ul class="nav-list">
+        <li><a href="#yoga-classes" class="active">Yoga Classes</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#footer-contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <!-- SVG логотип -->
+    <a href="#hero" class="logo">
+      <img src="/project-team8bit/assets/logo-CgjmZosQ.svg" alt="YogaBloom"/>
+    </a>
+    <!-- Кнопка Join Now -->
+     <div class="desktop-joinnow"><a href="#pricing" class="join-btn small"><span class="text-mobile">Join</span><span class="text-desktop">Join Now</a></div>
+  </div>
+
+  <!-- Мобільне меню -->
+<div class="mobile-menu hidden" id="mobile-menu">
+
+  <!-- Верхній рядок -->
+  <div class="mobile-header-top">
+    <button class="menu-close" id="close-menu">×</button>
+
+    <a href="#hero" class="logo-navbar">
+      <img src="/project-team8bit/assets/logo-CgjmZosQ.svg" alt="YogaBloom"/>
+    </a>
+
+    <a href="#pricing" class="join-btn small"> <span class="text-mobile">Join</span><span class="text-desktop">Join Now</span></a>
     
+  </div>
+
+  <!-- Навігація -->
+    <nav class="nav-mobile">
+      <ul class="nav-list">
+        <li><a href="#classes">Yoga Classes</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#footer-contacts">Contacts</a></li>
+      </ul>
+    </nav>
+
+  <!-- Велика кнопка внизу -->
+  <a href="#pricing" class="join-btn large">Join</a>
+</div>
+
+  <!--menujs-->
+<script src="./js/menu.js"></script>
+</header>
+
 
     <main>
       <!-- Loads the specified .html file -->
