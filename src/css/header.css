@@ -1,0 +1,350 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --color-hawkes-blue: #c9dcff;
+  --color-scheme-3-text: #000000;
+  --color-scheme-3-background: #f5fdfd;
+  --color-neutral-dark: #555453;
+  --color-hawkes-blue-dark: #9badc9;
+  --my-custom-blue: #9badc9;
+
+}
+/* Основні стилі */
+.nav-list a.active {
+  position: relative;
+  font-weight: 600;
+}
+
+.nav-list a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px; 
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-neutral-dark);
+}
+.header-container{
+  background: var(--color-scheme-3-background);
+  position: relative;
+  width: 100%;
+  height: 74px;
+  display: flex;
+  
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.mobile-header-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+  font-family: var(--font-family);
+  height: 64px;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  width: 100%;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-scheme-3-text);
+}
+.nav-list a{
+  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+/* Мобільне меню */
+.mobile-menu{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-scheme-3-background);
+  z-index: 999;
+}
+.mobile-menu.is-open {
+    display: flex;
+}
+.hidden{
+  display: none;
+}
+.menu-toggle,
+.menu-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  
+}
+
+/* Базовий container (для мобілки 375) */
+.header-container {
+  background: var(--color-scheme-3-background);
+  position: relative;
+  padding: 0 16px;
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Навігація */
+.nav-list {
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+  width: 100%;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: var(--color-scheme-3-text);
+  
+}
+.nav-list a {
+  text-decoration: none;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+/* Логотип */
+.logo {
+  padding-left: 0;
+}
+
+/* Кнопки */
+
+.join-btn.small {
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  font-size: 16px;
+  border: 1px solid var(--color-hawkes-blue);
+  background: var(--color-hawkes-blue);
+  border-radius: 100px;
+  color: var(--color-scheme-3-text);
+  text-decoration: none;
+  gap: 4px;
+  height: 34px;
+  min-width: 80px;
+  padding-top: 4px;
+  padding-left: 24px;
+  padding-right: 22px;
+}
+
+.join-btn.large {
+  background: var(--color-hawkes-blue);
+  border-radius: 100px;
+  width: 343px;
+  height: 46px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-scheme-3-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  align-self: flex-end;
+  margin-bottom: 160px;
+}
+.join-btn.small:hover,
+.join-btn.large:hover {
+  background-color: var(--my-custom-blue);
+  color: var(--color-scheme-3-text); 
+}
+/* Мобільне меню */
+.mobile-menu {
+  flex-direction: column;
+  justify-content: flex-start;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-scheme-3-background);
+  z-index: 999;
+  padding: 0 1.5rem;
+  margin-left: 8px;
+}
+.nav-mobile{
+  flex-grow: 1;
+}
+.mobile-menu.is-open {
+  display: flex;
+}
+
+.mobile-header-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 4px;
+}
+
+.menu-toggle,
+.menu-close {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+.text-desktop {
+  display: none;
+}
+.text-mobile {
+  display: inline;
+}
+/* === MOBILE < 768px === */
+  .nav-desktop {
+    display: flex;
+    gap: 2rem;
+    
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+  .nav-desktop{
+    display: none;
+  }
+  .header-container {
+    height: 64px;
+    padding: 0 16px;
+  }
+
+  .logo {
+    padding-left: 0;
+  }
+
+  .text-mobile {
+    display: inline;
+  }
+
+  .text-desktop {
+    display: none;
+  }
+
+/* TABLET: 769px–1024px */
+@media screen and (min-width: 768px){
+ .menu-toggle,
+.mobile-menu {
+}
+.nav-desktop {
+  display: flex;
+}
+
+  .header-container {
+    width: 100%;
+    height: 80px;
+    padding: 0 32px;
+  }
+
+  .nav-desktop {
+    display: flex;
+    gap: 2rem;
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin: 0;
+    
+  }
+  .nav-mobile{
+    margin-top: 18px;
+  }
+  .join-btn.small {
+    width: auto;
+    height: 40px;
+    padding-top: 8px;
+    padding-left: 24px;
+    padding-right: 20px;
+    font-size: 16px;
+    font-family: var(--font-family);
+  }
+ .join-btn.large {
+  margin-left: 0;
+  align-self: flex-start;
+  width: 204px;
+    height: 46px;
+}
+  .logo {
+    align-items: center;
+    display: block;
+  }
+  
+}
+
+/* === DESKTOP: 1336px – 1439px === */
+@media screen and (min-width: 1336px) {
+  .menu-toggle,
+  .mobile-menu {
+    display: none;
+  }
+
+  .header-container {
+    max-width: 1336px;
+    margin: 0 auto;
+    padding: 0 12px;
+    height: 90px;
+    gap: 32px;
+  }
+
+  .nav-desktop {
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 129px;
+  }
+
+  .nav-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .join-btn.small {
+    font-size: 16px;
+    padding: 8px 8px 20px 20px;
+    width: 105px;
+    height: 42px;
+    font-family: var(--font-family);
+    font-weight: 500;
+
+  }
+  .desktop-joinnow{
+    padding-left: 477px;
+  }
+  .logo {
+    padding-left: 0;
+    display: inline;
+  }
+  .text-mobile {
+    display: none;
+  }
+
+  .text-desktop {
+    display: inline;
+  }
+}

@@ -1,0 +1,286 @@
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yogaclass {
+  background: #f2fafa;
+  padding: 64px 0;
+}
+
+.yogaclass-header {
+  max-width: 375px;
+  /* padding: 64px 16px; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.yogaclass-header-title {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.yoga-subtitle {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 12px;
+  /*margin-top: 64px;*/
+}
+
+.yoga-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+
+.yoga-description {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.yoga-list {
+  margin-right: 16px;
+  margin-left: 16px;
+}
+
+.yoga-card-image {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.yoga-card-picture {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  margin-top: 40px;
+}
+
+.yoga-card-title {
+  font-family: 'Cabin', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+  width: 343px;
+}
+
+.yoga-card-description {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.yoga-beginner {
+  display: none;
+}
+
+.yoga-join-href {
+  max-width: 100%;
+}
+
+.yoga-join {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  padding: 10px 0;
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  background: #c2d9fc;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+  /* margin-bottom: 64px;*/
+}
+
+.yoga-join:hover,
+:focus {
+  border: 1px solid #c2d9fc;
+}
+
+.join-desktop {
+  display: none;
+}
+
+.join-mobile {
+  display: inline;
+}
+
+@media (min-width: 768px) {
+  .yogaclass {
+    padding: 40px 0;
+  }
+  .yogaclass-header {
+    max-width: 768px;
+    /* padding: 40px 32px; */
+  }
+
+  .yogaclass-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .yogaclass-header-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .yoga-subtitle {
+    margin-bottom: 16px;
+    /*margin-top: 40px;*/
+  }
+
+  .yoga-title {
+    margin-bottom: 24px;
+    width: 768px;
+    font-size: 56px;
+  }
+
+  .yoga-description {
+    margin-bottom: 40px;
+    width: 768px;
+  }
+  .yoga-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .yoga-card-image {
+    width: calc((100% - 24px) / 2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .yoga-card-image:last-child {
+    width: 100%;
+  }
+
+  .yoga-cards {
+    width: 340px;
+  }
+  .yoga-card-title {
+    width: 100%;
+  }
+
+  .yoga-card-description {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .yoga-cards-last {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .yoga-new {
+    display: none;
+  }
+  .yoga-beginner {
+    display: inline;
+  }
+
+  .yoga-join {
+    padding: 10px 24px;
+    /*margin-bottom: 40px;*/
+  }
+
+  .yoga-join:hover,
+  :focus {
+    border: 1px solid #c2d9fc;
+  }
+
+  .join-mobile {
+    display: none;
+  }
+
+  .join-desktop {
+    display: inline;
+  }
+}
+
+@media (min-width: 1336px) {
+  .yogaclass-header {
+    max-width: 1336px;
+    /* padding: 112px 64px; */
+  }
+  .yogaclass {
+    padding: 112px 0;
+  }
+
+  /* .yoga-subtitle {
+    margin-top: 112px;
+  }*/
+
+  .yoga-list {
+    gap: 24px;
+  }
+
+  .yoga-card-image {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .yogaclass-header-image {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  .yoga-card-first {
+    width: 421px;
+  }
+
+  .yoga-card-title {
+    margin-bottom: 24px;
+    width: 421px;
+    font-size: 36px;
+  }
+
+  .yoga-card-image:last-child {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .yoga-card-description {
+    margin-bottom: 40px;
+  }
+
+  /* .yoga-join {
+    margin-bottom: 112px;
+  }*/
+}

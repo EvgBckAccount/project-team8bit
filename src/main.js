@@ -1,0 +1,5 @@
+import './js/menu.js'
+import './js/modal1.js'
+import './js/modal2.js'
+import './js/modal3.js'
+import './js/modal4.js'

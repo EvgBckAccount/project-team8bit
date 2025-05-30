@@ -1,0 +1,291 @@
+/* === Base Mobile Styles === */
+.pricing-plans {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px 16px;
+  background-color: #f2fafa;
+}
+
+.pricing-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.pricing-label,
+.pricing-subtitle,
+.pricing-name {
+  margin-bottom: 12px;
+}
+
+
+.pricing-label {
+font-family: "Sarabun", sans-serif;
+font-weight: 600;
+font-size: 16px;
+line-height: 1.5;
+text-align: center;
+color: #0d0b0a;
+}
+
+.pricing-name {
+font-size: 40px;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+line-height: 1.2;
+letter-spacing: 0.01em;
+text-align: center;
+color: #0d0b0a;
+}
+
+.pricing-subtitle {
+font-family: "Sarabun", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+text-align: center;
+color: #0d0b0a;
+}
+
+.pricing-plans-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 16px;
+  padding: 32px 24px;
+  background-color: #dfebeb;
+  width: 100%;
+}
+
+.pricing-card-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  align-items: center;
+}
+
+.pricing-card-title {
+font-size: 18px;
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+line-height: 1.4;
+letter-spacing: 0.01em;
+text-align: center;
+color: #0d0b0a;
+}
+
+.pricing-card-price {
+  
+font-family: "Cabin", sans-serif;
+font-weight: 400;
+font-size: 44px;
+line-height: 1.2;
+letter-spacing: 0.01em;
+text-align: center;
+color: #0d0b0a;
+}
+
+.pricing-packages {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 0;
+}
+
+.package {
+  display: flex;
+  gap: 16px;
+  font-family: "Sarabun", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.6;
+color: #0d0b0a;
+}
+
+.icon-pricing-check {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  fill: #0d0b0a;
+}
+
+.pricing-btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 10px 24px;
+  background-color: #c2d9fc;
+  border: 1px solid #c2d9fc;
+  height: 46px;
+  width: 100%;
+  max-width: 295px;
+  cursor: pointer;
+}
+
+.pricing-btn-primary:hover {
+  background-color: #b0c7ed;
+}
+
+/* === Third card buttons visibility === */
+.btn-tablet {
+  display: none;
+}
+.btn-default {
+  display: flex;
+}
+
+/* === Tablet styles (768px) === */
+@media screen and (min-width: 768px) {
+  .btn-tablet {
+    display: flex;
+  }
+  .btn-default {
+    display: none;
+  }
+
+  .pricing-plans-content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+
+  }
+
+  .pricing-card {
+    flex: 1 1 45%;
+    gap: 24px;
+  }
+
+  .pricing-card:nth-child(3) {
+    flex: 1 1 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .pricing-card:nth-child(3) .pricing-content-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;      
+    gap: 24px;
+    width: 320px;
+    height: 100%;
+  
+  }
+
+ .pricing-card:nth-child(3) .pricing-card-header {
+  align-items: center;
+  text-align: center;
+}
+
+  .pricing-card:nth-child(3) .btn-tablet {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .pricing-card:nth-child(3) .pricing-packages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* ⬅️ Це вирівнює список вертикально */
+    align-items: flex-start;
+    gap: 16px;
+    padding: 8px 0;
+    height: 100%;
+  }
+  .pricing-card:nth-child(3) {
+    align-items: stretch; /* Щоб обидві колонки були однакової висоти */
+  }
+
+}
+
+
+/* === Desktop styles (min-width: 1336px) === */
+@media screen and (min-width: 1336px) {
+  .pricing-plans-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 24px;
+    align-items: stretch;
+}
+
+
+
+  .pricing-card {
+  width: calc((100% - 2 * 24px) / 3);
+  max-width: 421px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+  gap: 32px;
+  justify-content: flex-start;
+  border-radius: 16px;  
+}
+
+  .pricing-card .pricing-content-left {
+    align-items: center;
+  }
+
+  .pricing-card .pricing-card-header {
+    align-items: center;
+    text-align: center;
+  }
+
+  .pricing-card .pricing-packages {
+  padding: 8px 0px;
+  gap: 16px; 
+}
+
+ .pricing-card .btn-default {
+  align-self: center;
+  margin-top: 16px; 
+  width: 100%;
+  max-width: 295px;
+}
+  .btn-tablet {
+  display: none;
+}
+.btn-default {
+  display: flex;
+}
+.pricing-card:nth-child(3) {
+  flex: 0 0 auto; 
+  width: calc((100% - 2 * 24px) / 3); 
+  flex-direction: column;
+  align-items: center;
+  justify-content: initial;
+  gap: 24px;
+}
+
+.pricing-btn-primary {
+    margin-top: auto;
+  }
+}
+
+
+
+
+
+
+
